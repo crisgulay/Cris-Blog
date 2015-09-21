@@ -1,0 +1,19 @@
+TypeError: C:\CrisBlog\views\index.ejs:44
+    42|                 return (
+    43|          <p>   
+ >> 44| <%
+    45| blogs.forEach(function(blog)
+    46| {
+    47|   %> 
+
+Cannot read property 'forEach' of undefined
+    at eval (eval at <anonymous> (C:\CrisBlog\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:18:6)
+    at returnedFn (C:\CrisBlog\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (C:\CrisBlog\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (C:\CrisBlog\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (C:\CrisBlog\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (C:\CrisBlog\node_modules\express\lib\response.js:753:7)
+    at C:\CrisBlog\app.js:39:11
+    at C:\CrisBlog\blogprovider.js:26:23
+    at C:\CrisBlog\node_modules\mongodb\lib\mongodb\cursor.js:156:22
+    at commandHandler (C:\CrisBlog\node_modules\mongodb\lib\mongodb\cursor.js:608:48)

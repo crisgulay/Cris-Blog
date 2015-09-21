@@ -1,0 +1,19 @@
+TypeError: C:\CrisBlog\views\index.jade:6
+    4|     h1= title
+    5|     #blogs
+  > 6|         - each blog in blogs
+    7|           div.blog
+    8|             div.created_at= blog.created_at
+    9|             div.title= blog.title 
+
+Cannot read property 'length' of undefined
+    at eval (eval at <anonymous> (C:\CrisBlog\node_modules\jade\lib\jade.js:176:8), <anonymous>:50:35)
+    at eval (eval at <anonymous> (C:\CrisBlog\node_modules\jade\lib\jade.js:176:8), <anonymous>:201:4)
+    at C:\CrisBlog\node_modules\jade\lib\jade.js:181:12
+    at Object.exports.render (C:\CrisBlog\node_modules\jade\lib\jade.js:216:14)
+    at View.exports.renderFile [as engine] (C:\CrisBlog\node_modules\jade\lib\jade.js:243:13)
+    at View.render (C:\CrisBlog\node_modules\express\lib\view.js:75:8)
+    at Function.app.render (C:\CrisBlog\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (C:\CrisBlog\node_modules\express\lib\response.js:753:7)
+    at C:\CrisBlog\app.js:39:11
+    at C:\CrisBlog\blogprovider.js:26:23

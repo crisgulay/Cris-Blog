@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+      <!--FOR REACT-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--FOR CSS MATERIALIZE-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+      <link rel=""stylesheet" href="/stylesheets/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+  </head>
+  <body>
+
+
+          <nav class="blue darken-2">
+        <div class="navbar-wrapper container">
+        <a href="#" class="brand-logo">Cris Blog</a>
+        
+        <ul class="right">
+            <li> <a href="/">Home</a></li>
+            <li> <a href="#">Products</a></li>
+            <li> <a href="#">Contact</a></li>
+
+        </ul>
+        </div>
+      
+      
+      </nav>
+
+   <div class="container">
+           <div class="row">
+                <div class="col 14">
+                    <div class="card-panel">
+                       
+
+
+       
+        
+        <form method="post">
+            <h5><br />Title :</h5>
+          <input name="title" type="text" id="editblogTitle" value="<%= title %>"> </input>
+         <h5><br />Content :</h5>
+          <input name="name" type="text" id="editblogName" value="<%= name %>"> </input>
+         <input value="Update" type="submit"> </input>
+        </form>
+        
+
+        
+
+                    </div>
+                </div>
+            </div>
+    </div>
+
